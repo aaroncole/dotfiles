@@ -20,6 +20,9 @@ function blt() {
   fi
 }
 
+alias ll="ls -al"
+alias gs="git status"
+
 export PATH=${PATH}:/usr/local/mysql/bin/
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
