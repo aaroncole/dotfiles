@@ -21,6 +21,7 @@ function blt() {
 }
 
 alias ll="ls -al"
+alias ld="ls -ld"
 alias gs="git status"
 
 export PATH=${PATH}:/usr/local/mysql/bin/
@@ -29,6 +30,10 @@ export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# color folders
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
 
 # Git branch in prompt.
 parse_git_branch() {
